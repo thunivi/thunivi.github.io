@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thunivi</title>
+    <meta name="description"
+        content="Discover thunivi, Coimbatore’s women's clothing brand. Shop high-quality daily wear, trendy ethnic co-ord sets, and elegant maxi dresses." />
+    <link rel="icon" href="favicon.png" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 2rem;
+            display: grid;
+            place-items: center;
+            background: #000;
+            color: #fff;
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        .page {
+            width: min(100%, 1100px);
+            display: grid;
+            grid-template-columns: 1fr minmax(320px, 420px);
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .hero {
+            display: grid;
+            gap: 1.25rem;
+            align-content: start;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            line-height: 0.95;
+            letter-spacing: -0.05em;
+            margin: 0;
+            max-width: 12ch;
+            text-transform: uppercase;
+        }
+
+        .hero-note {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.9rem 1.1rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #f6f2ef;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            width: fit-content;
+        }
+
+        .hero-copy {
+            max-width: 38rem;
+            font-size: 1.0625rem;
+            line-height: 1.8;
+            color: #dcd8d5;
+            margin: 0;
+        }
+
+        .hero-logo {
+            width: 100%;
+            max-width: 20rem;
+            display: block;
+            object-fit: contain;
+            border-radius: 1.5rem;
+        }
+
+        .side-panel {
+            display: grid;
+            gap: 1rem;
+            align-content: start;
+        }
+
+        .links-header {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            opacity: 0.75;
+        }
+
+        .links {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.15rem 1.25rem;
+            border-radius: 1.25rem;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .link-card:hover,
+        .link-card:focus-visible {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.16);
+            outline: none;
+        }
+
+        .link-card strong {
+            font-weight: 800;
+            color: #f9f7f4;
+        }
+
+        .link-card.primary {
+            background: linear-gradient(135deg, #ff6c55 0%, #d54338 100%);
+            border-color: transparent;
+        }
+
+        .link-card.primary:hover,
+        .link-card.primary:focus-visible {
+            background: linear-gradient(135deg, #ff5d48 0%, #cd3f30 100%);
+        }
+
+        @media (max-width: 900px) {
+            .page {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                align-items: start;
+            }
+
+            .hero-copy,
+            .subtitle {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 540px) {
+            body {
+                padding: 1rem;
+            }
+
+            .page {
+                padding: 1.25rem;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-note,
+            .link-card,
+            .footer-note {
+                font-size: 0.95rem;
+            }
+
+            .link-card {
+                padding: 1rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="hero">
+            <img class="hero-logo" src="thunivi_logo_english.png" alt="thunivi logo" />
+            <span class="hero-note">gracefully bold!</span>
+            <h1 class="hero-title">Women's clothing from Coimbatore</h1>
+            <p class="hero-copy">Stylish daily wear, elegant ethnic co-ord sets, and maxi dresses crafted for modern
+                confidence.</p>
+
+        </div>
+
+        <div class="side-panel">
+            <div class="links-header">Connect with us</div>
+            <div class="links">
+                <a class="link-card" href="https://www.instagram.com/shopthunivi?igsh=cWdjNzJpanZzanl4&utm_source=qr"
+                    target="_blank" rel="noopener noreferrer">
+                    <span>Follow on Instagram</span>
+                    <strong>@shopthunivi</strong>
+                </a>
+                <a class="link-card" href="https://wa.me/message/MML75OZ5KYT2B1" target="_blank"
+                    rel="noopener noreferrer">
+                    <span>Message on WhatsApp</span>
+                    <strong>Chat now</strong>
+                </a>
+                <a class="link-card" href="https://in.pinterest.com/thunivi/" target="_blank" rel="noopener noreferrer">
+                    <span>Browse Pinterest</span>
+                    <strong>@thunivi</strong>
+                </a>
+                <a class="link-card primary" href="tel:+919944412355">
+                    <span>Call +91 99444 12355</span>
+                    <strong>Speak now</strong>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
