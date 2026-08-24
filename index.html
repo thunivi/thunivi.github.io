@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    
-    <!-- Layer 1: Instant HTML Meta Redirect -->
+    <title>Redirecting to Thunivi...</title>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://thunivi.in/bio">
     <meta http-equiv="refresh" content="0; url=https://thunivi.in/bio">
-    
     <script>
-        <!-- Layer 2: JavaScript Backup Redirect -->
-        window.location.href = "https://thunivi.in/bio";
+        window.location.replace("https://thunivi.in/bio");
     </script>
 </head>
 <body>
-    <!-- Fallback link in the rare case a browser blocks redirects -->
-    <p style="text-align: center; margin-top: 50px; font-family: sans-serif; color: #333;">
-        Redirecting you to our bio page... If it doesn't load, <a href="https://thunivi.in/bio">click here</a>.
-    </p>
+    <main style="max-width: 36rem; margin: 4rem auto; padding: 0 1rem; text-align: center; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #333;">
+        <p>
+            Redirecting you to our bio page. If it doesn't load, <a href="https://thunivi.in/bio" aria-label="Open the Thunivi bio page">click here</a>.
+        </p>
+    </main>
 </body>
 </html>
