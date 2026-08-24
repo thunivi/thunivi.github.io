@@ -8,15 +8,11 @@
     <meta name="description"
         content="Shop functional Indo-Western dailywear for women. Boutique-finish clothing products with cotton lining. Based in Coimbatore, Tamilnadu. Worldwide Shipping." />
     <link rel="icon" href="favicon.png" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZ6FLCZNMP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-YZ6FLCZNMP');
-    </script>
+    <script src="../assets/analytics.js"></script>
     
     <style>
         * {
@@ -38,6 +34,29 @@
             background: #000;
             color: #fff;
             font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        a:focus-visible {
+            outline: 3px solid #ffcf70;
+            outline-offset: 4px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            transform: translateY(-200%);
+            padding: 0.85rem 1.15rem;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+            z-index: 10;
+        }
+
+        .skip-link:focus {
+            transform: translateY(0);
         }
 
         .page {
@@ -116,6 +135,7 @@
             align-items: center;
             justify-content: space-between;
             gap: 1rem;
+            min-height: 44px;
             padding: 1.15rem 1.25rem;
             border-radius: 2.25rem;
             text-decoration: none;
@@ -203,6 +223,17 @@
             }
         }
 
+        @media (max-width: 768px) {
+            body {
+                padding: 1.5rem;
+            }
+
+            .page {
+                gap: 1.5rem;
+                padding: 1.5rem;
+            }
+        }
+
         @media (max-width: 540px) {
             body {
                 padding: 1rem;
@@ -230,9 +261,10 @@
 </head>
 
 <body>
-    <div class="page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <main class="page" id="main-content">
         <div class="hero">
-            <img class="hero-logo" src="thunivi_logo_english.png" alt="thunivi logo" />
+            <img class="hero-logo" src="thunivi_logo_english.png" alt="Thunivi brand logo" loading="lazy" />
             <span class="hero-note">அழகாக | தைரியமாக</span>
             <h1 class="hero-title">Indo-Western Dailywear | For Women</h1>
             <p class="hero-copy">Based in Coimbatore, Tamil Nadu | Shipping Pan-India</p>
@@ -241,56 +273,58 @@
 
         <div class="side-panel">
             <div class="links-header">Connect with us</div>
-            <div class="links">
+            <nav class="links" aria-label="Thunivi contact and policy links">
                 <a class="link-card instagram" href="https://www.instagram.com/shopthunivi?igsh=cWdjNzJpanZzanl4&utm_source=qr"
-                    target="_blank" rel="noopener noreferrer">
+                    target="_blank" rel="noopener noreferrer" aria-label="Follow Thunivi on Instagram">
                     <div class="link-content">
-                        <img class="link-icon" src="instagram.svg" alt="insta logo" />
+                        <img class="link-icon" src="instagram.svg" alt="" loading="lazy" />
                         <span>Follow on Instagram</span>
                     </div>
                     <strong>@shopthunivi</strong>
                 </a>
                 <a class="link-card whatsapp" href="https://wa.me/message/MML75OZ5KYT2B1" target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer" aria-label="Message Thunivi on WhatsApp">
                     <div class="link-content">
-                        <img class="link-icon" src="whatsapp.svg" alt="wa logo" />
+                        <img class="link-icon" src="whatsapp.svg" alt="" loading="lazy" />
                         <span>Message on WhatsApp</span>
                     </div>
                     <strong>Chat now</strong>
                 </a>
-                <a class="link-card pinterest" href="https://in.pinterest.com/thunivi/" target="_blank" rel="noopener noreferrer">
+                <a class="link-card pinterest" href="https://in.pinterest.com/thunivi/" target="_blank" rel="noopener noreferrer" aria-label="Browse Thunivi on Pinterest">
                     <div class="link-content">
-                        <img class="link-icon" src="pinterest.svg" alt="pin logo" />
+                        <img class="link-icon" src="pinterest.svg" alt="" loading="lazy" />
                         <span>Browse Pinterest</span>
                     </div>
                     <strong>@thunivi</strong>
                 </a>
-                <a class="link-card primary" href="tel:+919944412355">
+                <a class="link-card primary" href="tel:+919944412355" aria-label="Call Thunivi support at plus nine one nine nine four four four one two three five five">
                     <div class="link-content">
-                        <img class="link-icon" src="telephone-outbound-fill.svg" alt="mob logo" />
+                        <img class="link-icon" src="telephone-outbound-fill.svg" alt="" loading="lazy" />
                         <span>Call +91 99444 12355</span>
                     </div>
                     <strong>Speak now</strong>
                 </a>
-                <a class="link-card policy-link" href="shipping/">
+                <a class="link-card policy-link" href="shipping/" aria-label="Read the Shipping and Delivery Policy">
                     <div class="link-content">
                         <span>📦 Shipping & Delivery</span>
                     </div>
                     <strong>Policy</strong>
                 </a>
-                <a class="link-card policy-link" href="returns/">
+                <a class="link-card policy-link" href="returns/" aria-label="Read the Return and Exchange Policy">
                     <div class="link-content">
                         <span>🔄 Returns & Exchanges</span>
                     </div>
                     <strong>Policy</strong>
                 </a>
-            </div>
+            </nav>
         </div>
-    </div>
-    
+    </main>
+
     <footer>
-        <a href="shipping/">Shipping Policy</a> • 
-        <a href="returns/">Return & Exchange Policy</a>
+        <nav aria-label="Footer policy links">
+            <a href="shipping/" aria-label="Open the Shipping Policy page">Shipping Policy</a> •
+            <a href="returns/" aria-label="Open the Return and Exchange Policy page">Return & Exchange Policy</a>
+        </nav>
     </footer>
 </body>
 
