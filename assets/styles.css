@@ -151,6 +151,60 @@ a:focus-visible {
     text-underline-offset: 0.16em;
 }
 
+.table-wrap {
+    overflow-x: auto;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 0.75rem;
+}
+
+.size-table {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+}
+
+.size-table th,
+.size-table td {
+    padding: 0.75rem 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    text-align: center;
+}
+
+.size-table th {
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.size-table th:first-child {
+    text-align: left;
+    font-weight: 700;
+}
+
+.fit-note {
+    margin-top: 0.75rem;
+    padding: 1rem;
+    border-left: 4px solid #ff8d8d;
+    border-radius: 0.5rem;
+    background: rgba(255, 141, 141, 0.12);
+}
+
+.fit-note strong {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+}
+
+.margin-note {
+    margin-top: 0.9rem;
+    padding: 0.8rem;
+    border: 1px dashed rgba(255, 255, 255, 0.26);
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.support-details p {
+    margin: 0.35rem 0;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 1.5rem;
