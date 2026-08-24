@@ -79,7 +79,6 @@ a:focus-visible {
     max-width: 15rem;
     display: block;
     object-fit: contain;
-    border-radius: 1.5rem;
 }
 
 .policy-title {
