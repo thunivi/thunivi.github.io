@@ -175,8 +175,7 @@ a:focus-visible {
     background: rgba(255, 255, 255, 0.08);
 }
 
-.size-table th:first-child,
-.size-table td:first-child {
+.size-table th:first-child {
     text-align: left;
     font-weight: 700;
 }
